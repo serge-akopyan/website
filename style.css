@@ -1,0 +1,342 @@
+/* Base Font Size */
+:root {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+/* Body */
+body {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: black;
+    color: #F5F1E9;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.you {
+    text-decoration: underline;
+}
+
+/* Contrast Section */
+.contrast {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contrast-before,
+.contrast-after {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contrast-before {
+    background-color: #F5F1E9;
+    color: black;
+}
+
+.contrast-after {
+    background-color: black;
+    color: #F5F1E9;
+}
+
+/* Why Section */
+.why h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.why p {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* How Section */
+.how {
+    background-color: #F5F1E9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.how h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+}
+
+/* Process Section */
+.process {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.process-step div h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+
+.process-step div p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Tools Section */
+.tools h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+}
+
+.tools p {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.tools span {
+    text-decoration: underline;
+}
+
+/* Packages Section */
+.packages .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.package {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.packages h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+}
+
+.package h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.package p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Deliverables Section */
+.deliverables,
+.deliverables-custom {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.deliverables {
+    color: black;
+    background-color: #F5F1E9;
+}
+
+.deliverables-custom {
+    color: #F5F1E9;
+    background-color: black;
+}
+
+.deliverables p,
+.deliverables-custom p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.deliverables h4,
+.deliverables-custom h4 {
+    font-weight: bold;
+}
+
+.deliverables-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+/* Guarantee Section */
+.guarantee h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.guarantee p {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.guarantee {
+    margin-bottom: 2rem;
+}
+
+/* Call to Action (CTA) Section */
+.cta {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.cta a {
+    text-align: center;
+    color: #F5F1E9;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 768px) {
+    body {
+        padding: 1rem 3rem 3rem 3rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .contrast {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+
+    .contrast-before,
+    .contrast-after {
+        width: 48%;
+    }
+
+    .process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .packages .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .package {
+        width: 48%;
+    }
+
+    .deliverables-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .deliverables,
+    .deliverables-custom {
+        width: 48%;
+    }
+
+    .cta {
+        width: 70%;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .why h2,
+    .tools h2,
+    .packages h2 {
+        font-size: 4rem;
+    }
+
+    .why p,
+    .tools p {
+        font-size: 2rem;
+    }
+
+    .how h2 {
+        font-size: 3rem;
+    }
+
+    .package h3 {
+        font-size: 3rem;
+    }
+
+    .guarantee h2 {
+        font-size: 3rem;
+    }
+
+    .guarantee p {
+        font-size: 2rem;
+    }
+}
